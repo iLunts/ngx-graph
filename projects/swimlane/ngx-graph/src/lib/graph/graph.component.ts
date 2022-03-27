@@ -105,6 +105,7 @@ export class GraphComponent extends BaseChartComponent implements OnInit, OnChan
   @Output() deactivate: EventEmitter<any> = new EventEmitter();
   @Output() zoomChange: EventEmitter<number> = new EventEmitter();
   @Output() clickHandler: EventEmitter<MouseEvent> = new EventEmitter();
+  @Output() graphUpdated: EventEmitter<boolean> = new EventEmitter();
 
   @ContentChild('linkTemplate') linkTemplate: TemplateRef<any>;
   @ContentChild('nodeTemplate') nodeTemplate: TemplateRef<any>;
@@ -687,6 +688,7 @@ export class GraphComponent extends BaseChartComponent implements OnInit, OnChan
         this.updateMidpointOnEdge(edge, edge.points);
       }
     });
+    this.graphUpdated.next(true);
   }
 
   /**
