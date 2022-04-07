@@ -152,5 +152,8 @@
       }
     }
   },
-  "defaultProject": "ngxGraph"
+  "defaultProject": "ngxGraph",
+  "cli": {
+    "analytics": false
+  }
 }
