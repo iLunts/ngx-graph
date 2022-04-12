@@ -1,10 +1,9 @@
 {
   "name": "@swimlane/ngx-graph",
-  "version": "7.2.0",
+  "version": "7.2.0-lum",
   "description": "Graph visualization for angular",
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/swimlane/ngx-graph.git"
+    "url": "https://artifacts.bcp.absa.co.za/artifactory/api/npm/lum-npm/@swimlane/ngx-graph/-/ngx-graph-7.2.0.tgz"
   },
   "keywords": [
     "angular",
